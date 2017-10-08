@@ -1,0 +1,4 @@
+#cd /home/pi/hosting
+JEKYLL_ENV=production /home/pi/.rbenv/shims/jekyll build -s /home/pi/blog/ -d /home/pi/hosting/
+JEKYLL_ENV=production /home/pi/.rbenv/shims/jekyll serve --watch -s /home/pi/blog/ -d /home/pi/hosting/ --port 7718 --host 192.168.0.13
+#cd -

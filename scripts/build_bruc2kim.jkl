@@ -1,0 +1,3 @@
+cd /home/pi/brucekim.github.io/
+jekyll build --watch -s /home/pi/brucekim.github.io -d /home/pi/hosting
+cd -

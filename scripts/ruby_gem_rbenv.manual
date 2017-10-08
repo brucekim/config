@@ -1,0 +1,24 @@
+#rbenv
+
+Installation
+$ rbenv install -l
+$ rbenv install 2.4.1
+
+Version change
+$ rbenv local 2.0.0
+
+Version check
+$ rbenv version
+
+No need sudo to install gems
+$ gem env home //check the location where gems are being installed with gen env
+
+Uninstalling Ruby versions
+$ rf -rf the directory of the version to be removed
+$ rbenv prefix x.x.x //print the directory path for a particular ruby version
+
+Set the global version of Ruby to be used in all shells
+$ rbenv global 1.8.7-p352
+
+Check the location where gems are being installed with gem env
+$ gem env home

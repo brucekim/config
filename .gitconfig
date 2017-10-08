@@ -1,0 +1,12 @@
+[user]
+	name = Bruce Kim
+	email = bruce.kim.it@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[commit]
+    template = /home/pi/.gitmessage.txt
+
