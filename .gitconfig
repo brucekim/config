@@ -5,8 +5,9 @@
 	ui = auto
 [core]
 	editor = vim
+    ignorecase = false
 [merge]
 	tool = vimdiff
 [commit]
-    template = /home/pi/.gitmessage.txt
+    template = $HOME/.gitmessage.txt
 
