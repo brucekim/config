@@ -1,7 +1,7 @@
 "common option
 set number
 syntax on
-colorscheme industry
+colorscheme desert
 set smartindent
 set ai
 set cindent
@@ -13,14 +13,16 @@ set expandtab
 set fo=croql
 set hlsearch
 
+"ctags path
+nmap <F5> :set tags+=tags<CR>
 
 "for vim plugin
 execute pathogen#infect()
 filetype plugin indent on
 
 let g:NERDTreeDirArrows = 1
-let g:NERDTreeDirArrowExpandable = '?'
-let g:NERDTreeDirArrowCollapsible = '?'
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDTreeGlyphReadOnly = "RO"
 let g:NERDTreeWinSize = 40
 
@@ -37,4 +39,25 @@ nmap <F9>   :TrinityToggleSourceExplorer<CR>
 nmap <F10>  :TrinityToggleNERDTree<CR>
 
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
-set list
+"set list!
+
+
+" vim cheatsheet - https://devhints.io/vimscript
+" more space for messages in command area to skip enter key twice
+set cmdheight=2
+"compile&test
+function! CompileCpp()
+    execute "!clear;g++" expand("%:t")
+"    echo expand("%")
+    echo expand("%:t")
+"    echo expand("%:p:h")
+"    echo expand("%:r")
+"    echo expand("%:e")
+endfunction
+
+function! RunAout()
+    execute "!clear;./a.out"
+endfunction
+
+nmap <F2> :call CompileCpp()<CR>
+nmap <F3> :call RunAout()<CR>
