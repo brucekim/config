@@ -1,17 +1,20 @@
 "common option
-set number
+set number "show line number
 syntax on
 colorscheme desert
 set smartindent
 set ai
-set cindent
+set cindent "auto indentation for c lang
 set tabstop=4
 set softtabstop=4
-set shiftwidth=4
+set shiftwidth=4 "set width of auto indentation
 set shiftround
 set expandtab
 set fo=croql
-set hlsearch
+set hlsearch " highlighting keyword
+set paste "remove staircase issue when paste
+"set autowrite "auto save whenever change focus to other files
+"set autoread "auto read whenever file has modified by external
 
 "ctags path
 nmap <F5> :set tags+=tags<CR>
