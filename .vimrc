@@ -12,7 +12,7 @@ set shiftround
 set expandtab
 set fo=croql
 set hlsearch " highlighting keyword
-set paste "remove staircase issue when paste
+"set paste "remove staircase issue when paste
 "set autowrite "auto save whenever change focus to other files
 "set autoread "auto read whenever file has modified by external
 
@@ -64,3 +64,13 @@ endfunction
 
 nmap <F2> :call CompileCpp()<CR>
 nmap <F3> :call RunAout()<CR>
+
+" esc in insert mode
+" ref: https://vi.stackexchange.com/questions/16963/remap-esc-key-in-vim
+inoremap kj <esc>
+
+" esc in command mode
+cnoremap kj <C-C>
+" Note: In command mode mappings to esc run the command for some odd
+" historical vi compatibility reason. We use the alternate method of
+" existing which is Ctrl-C
