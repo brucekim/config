@@ -1,7 +1,7 @@
 "common option
 set number "show line number
 syntax on
-colorscheme desert
+colorscheme murphy
 set smartindent
 set ai
 set cindent "auto indentation for c lang
@@ -24,10 +24,11 @@ execute pathogen#infect()
 filetype plugin indent on
 
 let g:NERDTreeDirArrows = 1
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeDirArrowExpandable = '?'
+let g:NERDTreeDirArrowCollapsible = '?'
 let g:NERDTreeGlyphReadOnly = "RO"
 let g:NERDTreeWinSize = 40
+let g:NERDTreeNodeDelimiter=' '
 
 "Open and close all the three plugins on the same time
 nmap <F7>   :TrinityToggleAll<CR>
