@@ -52,19 +52,30 @@ set cmdheight=2
 "compile&test
 function! CompileCpp()
     execute "!clear;g++" expand("%:t")
-"    echo expand("%")
-    echo expand("%:t")
-"    echo expand("%:p:h")
-"    echo expand("%:r")
-"    echo expand("%:e")
+"    echo expand("%")       " path/file.txt
+    echo expand("%:t")      " file.txt
+"    echo expand("%:p:h")   " /home/you/path/file.txt
+"    echo expand("%:r")     " path/file
+"    echo expand("%:e")     " txt
 endfunction
 
 function! RunAout()
     execute "!clear;./a.out"
 endfunction
 
+function! CompileKt()
+    execute "!clear;kotlinc" expand("%t") "-include-runtime" "-d" expand("%:r") . ".jar"
+endfunction
+
+function! RunKt()
+    execute "!clear;java" "-jar" expand("%:r") . ".jar"
+endfunction
+
 nmap <F2> :call CompileCpp()<CR>
 nmap <F3> :call RunAout()<CR>
+
+nmap <F4> :call CompileKt()<CR>
+nmap <F5> :call RunKt()<CR>
 
 " esc in insert mode
 " ref: https://vi.stackexchange.com/questions/16963/remap-esc-key-in-vim
