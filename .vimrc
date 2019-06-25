@@ -1,7 +1,6 @@
 "common option
 set number "show line number
 syntax on
-colorscheme murphy
 set smartindent
 set ai
 set cindent "auto indentation for c lang
@@ -22,6 +21,8 @@ nmap <F5> :set tags+=tags<CR>
 "for vim plugin
 execute pathogen#infect()
 filetype plugin indent on
+
+colorscheme dracula
 
 let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable = '?'
@@ -51,9 +52,9 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set cmdheight=2
 "compile&test
 function! CompileCpp()
-    execute "!clear;g++" expand("%:t")
+    execute "!clear;g++" "-std=c++14" expand("%:t")
 "    echo expand("%")       " path/file.txt
-    echo expand("%:t")      " file.txt
+    echo expand("%:t")
 "    echo expand("%:p:h")   " /home/you/path/file.txt
 "    echo expand("%:r")     " path/file
 "    echo expand("%:e")     " txt
