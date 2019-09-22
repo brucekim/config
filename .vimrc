@@ -22,7 +22,7 @@ nmap <F5> :set tags+=tags<CR>
 execute pathogen#infect()
 filetype plugin indent on
 
-colorscheme dracula
+colorscheme Monokai
 
 let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable = '?'
