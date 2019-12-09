@@ -1,0 +1,24 @@
+#https://github.com/VSCodeVim/Vim
+{
+    "workbench.colorTheme": "Visual Studio Light",
+    "editor.wordWrap": "on",
+    "plantuml.render": "Local",
+    "terminal.integrated.cursorStyle": "line",
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "k",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+}
