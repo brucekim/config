@@ -87,3 +87,14 @@ cnoremap kj <C-C>
 " Note: In command mode mappings to esc run the command for some odd
 " historical vi compatibility reason. We use the alternate method of
 " existing which is Ctrl-C
+
+
+"cscope
+set csprg=/usr/local/bin/cscope
+set csto=0
+set cst
+set nocsverb
+
+if filereadable("./cscope.out")
+    cs add cscope.out
+endif
