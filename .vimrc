@@ -77,9 +77,9 @@ nmap <F3> :call RunAout()<CR>
 
 nmap <F4> :call CompileKt()<CR>
 nmap <F5> :call RunKt()<CR>
-
+1
 " esc in insert mode
-" ref: https://vi.stackexchange.com/questions/16963/remap-esc-key-in-vim
+" ref: https://vi.stackexchange.com/questions/16964/remap-esc-key-in-vim
 inoremap kj <esc>
 
 " esc in command mode
@@ -87,7 +87,7 @@ cnoremap kj <C-C>
 " Note: In command mode mappings to esc run the command for some odd
 " historical vi compatibility reason. We use the alternate method of
 " existing which is Ctrl-C
-
+1
 
 "cscope
 set csprg=/usr/local/bin/cscope
@@ -101,3 +101,11 @@ endif
 
 "airline, smarter tab line
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#buffer_nr_format = '%s:'
+
+nnoremap <C-t> : enew<Enter>
+nnoremap <C-p> : bprevious!<Enter>
+nnoremap <C-n> : bnext!<Enter>
+nnoremap <C-x> : bp <BAR> bd #<Enter>
