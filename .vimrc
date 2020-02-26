@@ -98,3 +98,6 @@ set nocsverb
 if filereadable("./cscope.out")
     cs add cscope.out
 endif
+
+"airline, smarter tab line
+let g:airline#extensions#tabline#enabled = 1
