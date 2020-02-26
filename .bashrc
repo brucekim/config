@@ -156,3 +156,5 @@ retropie_welcome
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/scripts:$PATH"
 eval "$(rbenv init -)"
+
+source $HOME/git/config/skt_alias
