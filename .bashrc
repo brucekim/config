@@ -159,6 +159,6 @@ eval "$(rbenv init -)"
 
 
 # local config, 2020.03.02
-if [ -f $HOME/git/config/skt_config]; then
+if [ -f $HOME/git/config/skt_config ]; then
     source $HOME/git/config/skt_config
 fi
