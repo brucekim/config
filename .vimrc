@@ -109,3 +109,6 @@ nnoremap <C-t> : enew<Enter>
 nnoremap <C-p> : bprevious!<Enter>
 nnoremap <C-n> : bnext!<Enter>
 nnoremap <C-x> : bp <BAR> bd #<Enter>
+
+"python
+let g:python_highlight_all = 1

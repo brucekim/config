@@ -157,4 +157,8 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/scripts:$PATH"
 eval "$(rbenv init -)"
 
-source $HOME/git/config/skt_alias
+
+# local config, 2020.03.02
+if [ -f $HOME/git/config/skt_config]; then
+    source $HOME/git/config/skt_config
+fi

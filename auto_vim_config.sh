@@ -37,3 +37,5 @@ cd ~/.vim/bundle && git clone https://github.com/flazz/vim-colorschemes.git
 # kotlin vim
 cd ~/.vim/bundle && git clone https://github.com/udalov/kotlin-vim ~/.vim/bundle/kotlin-vim
 
+# python syntax
+cd ~/.vim/bundle && git clone https://github.com/vim-python/python-syntax.git
