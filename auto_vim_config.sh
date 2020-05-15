@@ -39,3 +39,18 @@ cd ~/.vim/bundle && git clone https://github.com/udalov/kotlin-vim ~/.vim/bundle
 
 # python syntax
 cd ~/.vim/bundle && git clone https://github.com/vim-python/python-syntax.git
+
+# quickr-cscope
+git clone https://github.com/ronakg/quickr-cscope.vim ~/.vim/bundle/quickr-cscope.vim
+# <leader>s : Search for all symbol occurances of word under the cursor
+# <leader>g : Search for global definition of the word under the cursor
+# <leader>c : Search for all callers of the function name under the cursor
+# <leader>f : Search for all files matching filename under the cursor
+# <leader>i : Search for all files including filename under the cursor
+# <leader>t : Search for text matching word under the cursor/visualy selected text
+# <leader>e : Enter an egrep patter for searching
+# <leader>d : Search all the functions called by funtion name under the cursor
+# <leader>a : Search all the places where the symbol under the cursor is assigned a value
+
+# tagbar
+git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/tagbar

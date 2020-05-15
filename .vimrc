@@ -43,6 +43,9 @@ nmap <F9>   :TrinityToggleSourceExplorer<CR>
 "Open and close the NERD_tree.vim separately
 nmap <F10>  :TrinityToggleNERDTree<CR>
 
+"Tagbar
+nmap <F11> :TagbarToggle<CR>
+
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 "set list!
 
@@ -90,7 +93,7 @@ cnoremap kj <C-C>
 1
 
 "cscope
-set csprg=/usr/local/bin/cscope
+set csprg=/usr/bin/cscope
 set csto=0
 set cst
 set nocsverb
@@ -112,3 +115,19 @@ nnoremap <C-x> : bp <BAR> bd #<Enter>
 
 "python
 let g:python_highlight_all = 1
+
+"quickr-cscope
+"let g:quickr_cscope_keymaps = 0
+
+"nmap <C-s>s <plug>(quickr_cscope_symbols)
+"nnoremap <C-s>g <plug>(quickr_cscope_global)
+"nmap <C-s>c <plug>(quickr_cscope_callers)
+"nmap <C-s>f  <plug>(quickr_cscope_files)
+"nmap <C-s>i <plug>(quickr_cscope_includes)
+"nmap <C-s>t <plug>(quickr_cscope_text)
+"nmap <C-s>e <plug>(quickr_cscope_egrep)
+"nmap <C-s>f <plug>(quickr_cscope_functions)
+"nmap <C-s>a <plug>(quickr_cscope_assignments)
+
+nmap <C-g>s <plug>(quickr_cscope_global_split)
+nmap <C-g>v <plug>(quickr_cscope_global_vert_split)

@@ -162,3 +162,5 @@ eval "$(rbenv init -)"
 if [ -f $HOME/git/config/skt_config ]; then
     source $HOME/git/config/skt_config
 fi
+
+export SCREENDIR=$HOME/.screen
