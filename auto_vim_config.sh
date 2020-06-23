@@ -54,3 +54,7 @@ git clone https://github.com/ronakg/quickr-cscope.vim ~/.vim/bundle/quickr-cscop
 
 # tagbar
 git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/tagbar
+
+# golang
+# The full documentation can be found at doc/vim-go.txt. You can display it from within Vim with :help vim-go
+git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
