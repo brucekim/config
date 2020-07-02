@@ -44,7 +44,7 @@ nmap <F9>   :TrinityToggleSourceExplorer<CR>
 nmap <F10>  :TrinityToggleNERDTree<CR>
 
 "Tagbar
-nmap <F11> :TagbarToggle<CR>
+nmap <F6> :TagbarToggle<CR>
 
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 "set list!
@@ -108,10 +108,10 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#buffer_nr_format = '%s:'
 
-nnoremap <C-t> : enew<Enter>
-nnoremap <C-p> : bprevious!<Enter>
-nnoremap <C-n> : bnext!<Enter>
-nnoremap <C-x> : bp <BAR> bd #<Enter>
+nnoremap <C-t>n : enew<Enter>
+nnoremap <C-t>p : bprevious!<Enter>
+nnoremap <C-t>n : bnext!<Enter>
+nnoremap <C-t>x : bp <BAR> bd #<Enter>
 
 "python
 let g:python_highlight_all = 1
@@ -131,3 +131,8 @@ let g:python_highlight_all = 1
 
 nmap <C-g>s <plug>(quickr_cscope_global_split)
 nmap <C-g>v <plug>(quickr_cscope_global_vert_split)
+
+
+"vim-go map
+nnoremap <C-g>r : GoRun<Enter>
+nnoremap <C-g>b : GoBuild<Enter>
