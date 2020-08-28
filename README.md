@@ -12,7 +12,7 @@ Git
 * .gitconfig
 * gitmessage.txt
 
-# issue
+# issue - how to resolve
 vim cursor jumps to top of source
 * desc: https://github.com/wesleyche/SrcExpl/issues/6
 * workaround
@@ -23,4 +23,18 @@ vim cursor jumps to top of source
 - 1552 au! CursorHold * nested call <SID>SrcExpl_Refresh()
 + 1553 au! CursorHold * call <SID>SrcExpl_Refresh()
 
+```
+
+# note
+ssh-keygen
+```bash
+$ ssh-keygen -t rsa -b 4096 -C "email addr"
+$ cat ~/.ssh/id_rsa.pub
+```
+
+brew install (Mac)
+* package manager for Apple
+```bash
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+$ brew install wget
 ```

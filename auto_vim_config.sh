@@ -60,3 +60,8 @@ git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/tagbar
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 
 #git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    brew install wget
+    brew install ctags
+fi
