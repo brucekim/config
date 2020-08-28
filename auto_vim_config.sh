@@ -1,6 +1,11 @@
 echo "Copying.. .vimrc under \$HOME"
 ln -sf ${PWD}/.vimrc $HOME/.vimrc
 
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    brew install wget
+    brew install ctags
+fi
+
 echo "Installing .. plugin"
 
 echo "p bundle"
@@ -60,8 +65,3 @@ git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/tagbar
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 
 #git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
-
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    brew install wget
-    brew install ctags
-fi
