@@ -6,6 +6,8 @@
 [core]
 	editor = vim
     ignorecase = false
+	quotePath = false
+	precomposeunicode = true
 [merge]
 	tool = vimdiff
 [commit]

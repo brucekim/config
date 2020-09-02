@@ -103,7 +103,7 @@ fi
 # RETROPIE PROFILE START
 # Thanks to http://blog.petrockblock.com/forums/topic/retropie-mushroom-motd/#post-3965
 
-function retropie_welcome() {
+function welcome() {
     local upSeconds="$(/usr/bin/cut -d. -f1 /proc/uptime)"
     local secs=$((upSeconds%60))
     local mins=$((upSeconds/60%60))
@@ -135,6 +135,8 @@ function retropie_welcome() {
         df_out+=("$line")
     done < <(df -h /)
 
+}
+function welcomemsg() {
 echo "$(tput setaf 2)
    .~~.   .~~.    $(date +"%A, %e %B %Y, %r")
   '. \ ' ' / .'   $(uname -srmo)$(tput setaf 1)
@@ -150,7 +152,7 @@ echo "$(tput setaf 2)
 $(tput sgr0)"
 }
 
-retropie_welcome
+welcome
 
 # RETROPIE PROFILE END
 export PATH="$HOME/.rbenv/bin:$PATH"
