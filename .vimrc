@@ -25,11 +25,14 @@ filetype plugin indent on
 colorscheme murphy
 
 let g:NERDTreeDirArrows = 1
-let g:NERDTreeDirArrowExpandable = '?'
-let g:NERDTreeDirArrowCollapsible = '?'
+"let g:NERDTreeDirArrowExpandable = '?'
+"let g:NERDTreeDirArrowCollapsible = '?'
+"let g:NERDTreeNodeDelimiter=' '
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
+let g:NERDTreeNodeDelimiter= "\t"
 let g:NERDTreeGlyphReadOnly = "RO"
 let g:NERDTreeWinSize = 40
-let g:NERDTreeNodeDelimiter=' '
 
 "Open and close all the three plugins on the same time
 nmap <F7>   :TrinityToggleAll<CR>
