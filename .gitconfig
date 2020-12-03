@@ -8,6 +8,6 @@
     ignorecase = false
 	quotePath = false
 	precomposeunicode = true
-	pager = cat
+	pager = less
 [merge]
 	tool = vimdiff
