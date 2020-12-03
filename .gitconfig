@@ -8,8 +8,6 @@
     ignorecase = false
 	quotePath = false
 	precomposeunicode = true
+	pager = cat
 [merge]
 	tool = vimdiff
-[commit]
-    template = $HOME/.gitmessage.txt
-
