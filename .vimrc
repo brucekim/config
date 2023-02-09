@@ -35,7 +35,7 @@ let g:NERDTreeGlyphReadOnly = "RO"
 let g:NERDTreeWinSize = 40
 
 "Open and close all the three plugins on the same time
-nmap <F7>   :TrinityToggleAll<CR>
+"nmap <F7>   :TrinityToggleAll<CR>
 
 "Open and close the taglist.vim separately
 nmap <F8>  :TrinityToggleTagList<CR>
@@ -44,7 +44,7 @@ nmap <F8>  :TrinityToggleTagList<CR>
 nmap <F9>   :TrinityToggleSourceExplorer<CR>
 "
 "Open and close the NERD_tree.vim separately
-nmap <F10>  :TrinityToggleNERDTree<CR>
+nmap <F7>  :TrinityToggleNERDTree<CR>
 
 "Tagbar
 nmap <F6> :TagbarToggle<CR>

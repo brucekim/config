@@ -54,6 +54,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u@\h\[\033[00m\] \[\033[01;31m\]\w \$\[\033[00m\] '
+    # PS1='\[\e]0;\u: \W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u@\h\[\033[00m\] \[\033[01;31m\]\w \$\[\033[00m\] \[\033[32m\]$(parse_git_branch)\[\033[00m\]'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -172,3 +173,15 @@ if [ -f $HOME/git/config/skt_config ]; then
 fi
 
 export SCREENDIR=$HOME/.screen
+
+export GOROOT=/usr/local/go     # go가 설치된 디렉토리
+export GOPATH=$HOME/go         # go의 workspace 위치를 정의하는 환경변수
+export GOBIN=$HOME/go/bin      # go install 명령을 실행했을 때 바이너리 파일이 생성되는 디렉터리를 설정하는 환경변수
+export PATH="$GOROOT/bin:$(go env GOBIN):$PATH"
+export PATH="$HOME/scripts:$PATH"
+
+#CUDA
+export PATH="/usr/local/cuda-11.8/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-11.8/lib64:$LD_LIBRARY_PATH"
+
+PROMPT_DIRTRIM=2
