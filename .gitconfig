@@ -9,5 +9,6 @@
 	quotePath = false
 	precomposeunicode = true
 	pager = less
+  filemode = false
 [merge]
 	tool = vimdiff
