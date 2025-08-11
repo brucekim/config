@@ -22,7 +22,8 @@ nmap <F5> :set tags+=tags<CR>
 execute pathogen#infect()
 filetype plugin indent on
 
-colorscheme murphy
+#colorscheme murphy
+colorscheme desert
 
 let g:NERDTreeDirArrows = 1
 "let g:NERDTreeDirArrowExpandable = '?'
@@ -44,7 +45,7 @@ nmap <F8>  :TrinityToggleTagList<CR>
 nmap <F9>   :TrinityToggleSourceExplorer<CR>
 "
 "Open and close the NERD_tree.vim separately
-nmap <F7>  :TrinityToggleNERDTree<CR>
+nmap <F10>  :TrinityToggleNERDTree<CR>
 
 "Tagbar
 nmap <F6> :TagbarToggle<CR>
@@ -115,6 +116,12 @@ nnoremap <C-t>n : enew<Enter>
 nnoremap <C-t>p : bprevious!<Enter>
 nnoremap <C-t>n : bnext!<Enter>
 nnoremap <C-t>x : bp <BAR> bd #<Enter>
+
+"for jupyter notebook - ctrl-w makes exit browser
+nnoremap <S-w>l <C-w>l
+nnoremap <S-w>h <C-w>h
+nnoremap <S-w>j <C-w>j
+nnoremap <S-w>k <C-w>k
 
 "python
 let g:python_highlight_all = 1
