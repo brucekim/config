@@ -180,8 +180,12 @@ export GOBIN=$HOME/go/bin      # go install 명령을 실행했을 때 바이너
 export PATH="$GOROOT/bin:$(go env GOBIN):$PATH"
 export PATH="$HOME/scripts:$PATH"
 
-#CUDA
-export PATH="/usr/local/cuda-11.8/bin:$PATH"
-export LD_LIBRARY_PATH="/usr/local/cuda-11.8/lib64:$LD_LIBRARY_PATH"
+# 터미널 커서 깜빡임 활성화
+echo -e "\033[?12h"
 
+#CUDA
+#export PATH="/usr/local/cuda-11.8/bin:$PATH"
+#export LD_LIBRARY_PATH="/usr/local/cuda-11.8/lib64:$LD_LIBRARY_PATH"
+
+# 마지막 2개 경로만 프롬프트에 보여줌
 PROMPT_DIRTRIM=2

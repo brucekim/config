@@ -40,7 +40,7 @@ cd ~/.vim/bundle && git clone https://github.com/vim-airline/vim-airline
 cd ~/.vim/bundle && git clone https://github.com/flazz/vim-colorschemes.git
 
 # kotlin vim
-cd ~/.vim/bundle && git clone https://github.com/udalov/kotlin-vim ~/.vim/bundle/kotlin-vim
+# cd ~/.vim/bundle && git clone https://github.com/udalov/kotlin-vim ~/.vim/bundle/kotlin-vim
 
 # python syntax
 cd ~/.vim/bundle && git clone https://github.com/vim-python/python-syntax.git
@@ -62,6 +62,7 @@ git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/tagbar
 
 # golang
 # The full documentation can be found at doc/vim-go.txt. You can display it from within Vim with :help vim-go
-git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
+# too slow
+#git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 
 #git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim

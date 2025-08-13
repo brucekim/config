@@ -23,7 +23,10 @@ execute pathogen#infect()
 filetype plugin indent on
 
 "colorscheme murphy
-colorscheme desert
+colorscheme torte
+
+" 커서 라인 하이라이트
+set cursorline
 
 let g:NERDTreeDirArrows = 1
 "let g:NERDTreeDirArrowExpandable = '?'
