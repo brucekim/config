@@ -125,6 +125,9 @@ nnoremap <S-w>l <C-w>l
 nnoremap <S-w>h <C-w>h
 nnoremap <S-w>j <C-w>j
 nnoremap <S-w>k <C-w>k
+nnoremap <S-w>s <C-w>s
+nnoremap <S-w>v <C-w>v
+nnoremap <S-w>= <C-w>=
 
 "python
 let g:python_highlight_all = 1
