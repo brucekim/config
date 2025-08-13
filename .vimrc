@@ -22,7 +22,7 @@ nmap <F5> :set tags+=tags<CR>
 execute pathogen#infect()
 filetype plugin indent on
 
-#colorscheme murphy
+"colorscheme murphy
 colorscheme desert
 
 let g:NERDTreeDirArrows = 1
